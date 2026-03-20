@@ -8,21 +8,68 @@
 </head>
 <body>
     <main>
+        <h1>Lista de Tarefas</h1>
         <ul class="Task-List">
-            <p>Lista de Tarefas</p>
         </ul>
     </main>
     <footer>
         
-        <button onclick="" id="Btn-New-Task-Modal">Adicionar Tarefa</button>
+        <button onclick="" id="Btn-New-Task-Modal">ADICIONAR TAREFA</button>
     </footer>
     <dialog class="Modal-New-Task">
-        <h3>Adicionar Tarefa</h3>
-        <p>Nome</p>
-        <input type="text" placeholder="Nome da Tarefa" id="New-Task-Name">
-        <p>Frenquência</p>
-        <input type="range">
+        <div class="Modal-Title">
+            <h3>ADICIONAR TAREFA</h3>
+            <button id="Close-Modal-Btn">X</button>
+        </div>
+        <form action="/send">
+            <p>Nome</p>
+            <fieldset class="Task-Name-Option">
+                <input type="text" placeholder="Nome da Tarefa" id="New-Task-Name">
+            </fieldset>
+            
+            <p>Frenquência</p>
+            <fieldset class="Frequency-Options">
+                <div class="Day-Checkbox">
+                    <input type="checkbox" id="segunda" name="dias" value="Segunda">
+                    <label for="segunda">Dom</label>
+                </div>
 
+                <div class="Day-Checkbox">
+                    <input type="checkbox" id="segunda" name="dias" value="Segunda">
+                    <label for="segunda">Seg</label>
+                </div>
+                
+                <div class="Day-Checkbox">
+                    <input type="checkbox" id="segunda" name="dias" value="Segunda">
+                    <label for="segunda">Ter</label>
+                </div>
+
+                <div class="Day-Checkbox">
+                    <input type="checkbox" id="segunda" name="dias" value="Segunda">
+                    <label for="segunda">Qua</label>
+                </div>
+
+                <div class="Day-Checkbox">
+                    <input type="checkbox" id="segunda" name="dias" value="Segunda">
+                    <label for="segunda">Qui</label>
+                </div>
+
+                <div class="Day-Checkbox">
+                    <input type="checkbox" id="segunda" name="dias" value="Segunda">
+                    <label for="segunda">Sex</label>
+                </div>
+
+                <div class="Day-Checkbox">
+                    <input type="checkbox" id="segunda" name="dias" value="Segunda">
+                    <label for="segunda">Sab</label>
+                </div>
+            </fieldset>
+            <div class="Submit-Task">
+               <button type="submit" value="Criar" id="Submit-Task-Btn">Criar</button> 
+            </div>
+            
+        </form>
+    
     </dialog>
     <script src="script.js"></script>
 </body>
